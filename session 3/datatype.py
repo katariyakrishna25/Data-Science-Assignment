@@ -1,4 +1,5 @@
 #data type in python topics 
+
 # 1. variable in python and use the use the type() function to display.
 
 age =10
