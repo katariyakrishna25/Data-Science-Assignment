@@ -1,0 +1,24 @@
+# Statistics Session 1
+
+# Task 1
+# 1. Instagram likes - Numerical
+# 2. Instagram post type - Categorical
+# 3. Zomato order amount - Numerical
+# 4. Zomato food category - Categorical
+# 5. Flipkart product category - Categorical
+
+
+# Task 2
+# This is categorical data because the values represent music genres.
+# They are labels such as Pop, Rock, Jazz and Hip-Hop.
+
+
+# Task 3
+# Statistics can help calculate the average number of Instagram likes.
+# This can help identify popular posts and improve recommendations.
+
+
+# Task 4
+# Mean - Average listening time.
+# Median - Middle listening time.
+# Mode - Most frequently listened genre.
