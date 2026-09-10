@@ -44,16 +44,16 @@ print("Masked Text:", hidden_text)
 
 
 comments = """
-1. Great shot @alex_travels!
-2. Thanks @john_doe
-3. Follow @photo_lover for more
-4. DM sent @maria_design
+1. Great shot @krishna_travels!
+2. Thanks @radhe
+3. Follow @photos and videos
+4. DM sent @keshav_design
 5. Too short @ab
-6. Awesome @alex_travels
-7. Superb @nature_hub
-8. Nice @travel_bug_99
-9. Tagging @maria_design
-10. Cheers @dev_team_2024
+6. Awesome @travels
+7. Superb @nature
+8. Nice @travel_99
+9. Tagging @design
+10. Cheers @krishna_2006
 """
 
 with open("comments.txt", "w") as f:
