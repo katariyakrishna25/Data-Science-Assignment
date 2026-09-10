@@ -28,20 +28,6 @@ formatted_time = current_time.strftime("%d-%m-%Y %H:%M:%S")
 print("Current date and time:", formatted_time)
 
 
-# Task 4 - Custom Module
-
-import playlist_utils
-
-playlist = []
-
-playlist_utils.add_song(playlist, "Believer")
-playlist_utils.add_song(playlist, "Perfect")
-playlist_utils.add_song(playlist, "Senorita")
-
-print("Final Playlist:", playlist)
-
-
-
 # Task 5 - Requests Module
 
 import requests
