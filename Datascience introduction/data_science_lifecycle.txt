@@ -1,0 +1,101 @@
+DATA SCIENCE LIFECYCLE
+
+Task 1
+
+App: Zomato
+
+Problem Definition:
+Many users spend too much time searching for food. A data science project can improve food recommendations.
+
+Business Goal:
+Recommend restaurants and dishes that users are more likely to order.
+
+Required Data:
+- User order history
+- Restaurant ratings
+- Cuisine type
+- Delivery time
+- User location
+- Search history
+
+
+Task 2
+
+Python Code:
+
+import requests
+
+url = "https://jsonplaceholder.typicode.com/posts"
+
+response = requests.get(url)
+
+posts = response.json()
+
+print("Latest 5 Posts:")
+
+for post in posts[:5]:
+    print(post["title"])
+
+
+Task 3
+
+Create a CSV file named spotify.csv
+
+song_name,artist,streams,genre
+Believer,Imagine Dragons,500000,Rock
+Perfect,Ed Sheeran,600000,Pop
+Senorita,Shawn Mendes,450000,Pop
+Levitating,Dua Lipa,550000,Pop
+Thunder,Imagine Dragons,400000,Rock
+Shape Of You,Ed Sheeran,700000,Pop
+Animals,Maroon 5,350000,Rock
+Closer,Chainsmokers,480000,EDM
+Faded,Alan Walker,520000,EDM
+Despacito,Luis Fonsi,800000,Latin
+
+
+Python Code:
+
+import pandas as pd
+
+df = pd.read_csv("spotify.csv")
+
+genre_count = df["genre"].value_counts()
+
+print(genre_count)
+
+
+Task 4
+
+Python Code:
+
+import matplotlib.pyplot as plt
+
+genres = ["Action", "Comedy", "Drama"]
+movies = [4, 3, 3]
+
+plt.bar(genres, movies)
+
+plt.xlabel("Genre")
+plt.ylabel("Number of Movies")
+plt.title("Movies Per Genre")
+
+plt.show()
+
+
+Task 5
+
+Feature Engineering Ideas:
+
+1. Order Hour
+Extract hour from order time.
+Example: Morning, Afternoon, Evening.
+Useful for predicting busy times.
+
+2. Average Restaurant Rating
+Calculate average rating of restaurants.
+Useful for predicting customer satisfaction.
+
+3. Delivery Speed Category
+Create categories like Fast, Medium, Slow.
+Useful for predicting customer ratings and repeat orders.
