@@ -79,8 +79,9 @@ order_ext.add_item("Lassi", 60)
 print(f"Updated Items: {order_ext.items}")
 print(f"Updated Total: Rs. {order_ext.total_price}")
 
+
+
 # Task 5: Refactor Song with Optional Duration
-print("\n--- TASK 5 ---")
 
 
 class SongOptionalDuration:

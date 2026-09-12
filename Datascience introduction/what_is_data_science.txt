@@ -1,0 +1,54 @@
+WHAT IS DATA SCIENCE
+
+Task 1
+
+1. Instagram:
+Instagram uses data such as likes, comments, searches, and watch time to understand what I like. It uses this data to recommend posts and reels that match my interests.
+
+2. Zomato:
+Zomato uses data such as my previous orders, restaurant searches, ratings, and location to recommend restaurants and food that I may like.
+
+3. Paytm:
+Paytm uses transaction history and user activity data to provide personalized offers, cashback, and useful payment suggestions.
+
+
+Task 2
+
+STATISTICS
+1. Mean and Median: Used to find the average or middle value in data.
+   Real-world example: An e-commerce company can calculate the average order value of customers.
+
+2. Correlation: Used to find relationships between two variables.
+   Real-world example: A sports company can check the relationship between training hours and player performance.
+
+
+PROGRAMMING
+1. Python and Pandas: Used to clean, process, and analyze large datasets.
+   Real-world example: An e-commerce company can use Python to analyze thousands of customer orders.
+
+2. SQL: Used to retrieve and analyze data from databases.
+   Real-world example: A company can use SQL to find its top-selling products.
+
+
+DOMAIN KNOWLEDGE
+1. Business Knowledge: Helps understand how a business works.
+   Real-world example: An e-commerce data scientist needs to understand sales, customers, and products to improve business decisions.
+
+2. Industry Understanding: Helps apply data science to a specific industry.
+   Real-world example: In sports, understanding player performance and match statistics helps create better performance strategies.
+
+
+Task 3
+
+A music streaming app like Spotify can collect data about the songs users listen to, skip, like, and save. It can analyze this data to understand each user's music preferences. For example, if a user frequently listens to pop songs, the app can recommend similar new pop songs. This data-driven approach helps users discover new music they are more likely to enjoy.
+
+
+Task 4
+
+Industry: E-commerce
+
+Innovative use of Data Science in E-commerce:
+
+E-commerce companies use Data Science for personalized product recommendations. They analyze customer searches, previous purchases, product views, clicks, and ratings to understand customer interests. Machine learning models then recommend products that a customer is more likely to buy. This improves the customer experience and can also increase sales.
+
+Example: When an online shopping website shows "Recommended for You" or "You may also like" products, these recommendations are often powered by data analysis and machine learning.
