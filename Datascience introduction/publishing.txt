@@ -1,0 +1,109 @@
+ASSIGNMENT: PUBLISHING PROJECTS & BUILDING YOUR DATA SCIENCE PORTFOLIO
+
+TASK 1: CREATE REPO & PUSH LOCAL JUPYTER NOTEBOOK
+1. Open terminal and run:
+mkdir my-movie-ratings
+cd my-movie-ratings
+touch movie_ratings.ipynb
+git init
+git add movie_ratings.ipynb
+git commit -m "Initial commit: Add movie_ratings notebook"
+git branch -M main
+git remote add origin https://github.com/<YOUR-GITHUB-USERNAME>/my-movie-ratings.git
+git push -u origin main
+
+
+TASK 2: GIT LFS FOR LARGE DATASET & README EXPLANATION
+1. Commands to track and push 100MB+ dataset:
+git lfs install
+git lfs track "*.csv"
+git add .gitattributes
+git add spotify_playlist_large.csv
+git commit -m "Track large Spotify dataset using Git LFS"
+git push origin main
+
+2. Explanation to add in README.md:
+Why Raw Data Files Should Not Be Uploaded Directly to GitHub:
+- Storage Limits: GitHub has a 100MB per-file hard limit and recommends keeping repositories under 1GB to 5GB. Git saves full history deltas, causing permanent repository bloat.
+- Bandwidth and Performance: Cloning and fetching repositories with large files consumes high network bandwidth and slows down team collaboration and CI/CD pipelines.
+- Privacy and PII Risks: Raw datasets may contain personally identifiable information (PII) or confidential data. Once committed, they remain in the Git commit tree permanently unless cleaned with history rewriting tools.
+- Solution: Track large files with Git LFS or host raw datasets on cloud storage (AWS S3, GCP, Kaggle) and keep only clean scripts in Git.
+
+
+TASK 3: NOTEBOOK DIFF USING NBDIME
+1. Terminal commands:
+pip install nbdime
+nbdime config-git --enable --global
+nbdiff movie_ratings.ipynb
+
+2. Output snippet to paste into README.md:
+--- a/movie_ratings.ipynb
++++ b/movie_ratings.ipynb
+## modified /cells/4:
+  - execution_count: 4
+  + execution_count: 5
+  - source:
+  -   df.head()
+  + source:
+  +   import matplotlib.pyplot as plt
+  +   plt.scatter(df['runs'], df['strike_rate'])
+  +   plt.title('IPL Player Runs vs Strike Rate')
+  +   plt.xlabel('Runs')
+  +   plt.ylabel('Strike Rate')
+  +   plt.savefig('plot.png')
+  +   plt.show()
+
+
+TASK 4: SHOWCASE DATA SCIENCE WORK (NO RAW DATA)
+1. Python file content (helper_functions.py):
+import pandas as pd
+
+def clean_missing_values(df):
+    return df.dropna().drop_duplicates().copy()
+
+def normalize_metric(series):
+    if series.max() == series.min():
+        return series
+    return (series - series.min()) / (series.max() - series.min())
+
+2. Terminal commands to push analysis artifacts:
+git add analysis.ipynb processed_data.csv plot.png helper_functions.py
+git commit -m "Add clean analysis notebook, processed dataset, plot, and helper script"
+git push origin main
+
+
+TASK 5: BUILD SIMPLE GITHUB PAGES PORTFOLIO SITE
+1. Create file index.html in root directory:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Portfolio</title>
+</head>
+<body>
+    <h1>Data Science Portfolio</h1>
+    <p><a href="resume.pdf" download>Download Resume (PDF)</a></p>
+    <h2>Projects</h2>
+    <div>
+        <h3>Instagram Follower Analysis</h3>
+        <p>Analyzed user engagement trends and follower growth patterns using Python and time-series clustering.</p>
+    </div>
+    <div>
+        <h3>Zomato Restaurant Ratings</h3>
+        <p>Built predictive rating models using sentiment analysis and regression on customer reviews and pricing data.</p>
+    </div>
+</body>
+</html>
+
+2. Add your resume file named resume.pdf in the same directory.
+
+3. Terminal commands to deploy:
+git add index.html resume.pdf
+git commit -m "Add portfolio website and resume"
+git push origin main
+
+4. Enable GitHub Pages:
+- Go to repository Settings on GitHub.
+- Click Pages on the left sidebar.
+- Set Branch to main and folder to / (root), then click Save.

@@ -1,0 +1,109 @@
+GIT-GITHUB
+
+Task 1
+
+First, install Git on the computer.
+
+After installation, open PowerShell or Command Prompt and run:
+
+git --version
+
+This command displays the installed Git version and confirms that Git is installed successfully.
+
+
+Task 2
+
+Create a new folder named music-recommendation:
+
+mkdir music-recommendation
+
+Go inside the folder:
+
+cd music-recommendation
+
+Initialize Git:
+
+git init
+
+Create README.md:
+
+echo "# Music Recommendation" > README.md
+
+Add the file:
+
+git add README.md
+
+Make the first commit:
+
+git commit -m "Initial commit for music-recommendation project"
+
+
+Task 3
+
+Create a new repository on GitHub named:
+
+foodie-favorites
+
+Connect the local repository to GitHub:
+
+git remote add origin YOUR_GITHUB_REPOSITORY_URL
+
+Rename the branch to main:
+
+git branch -M main
+
+Push the project:
+
+git push -u origin main
+
+
+Task 4
+
+Edit README.md and add:
+
+## Top 3 Music Apps
+
+1. Spotify
+2. YouTube Music
+3. Wynk
+
+Save the file.
+
+Check the changes:
+
+git status
+
+Add the updated README:
+
+git add README.md
+
+Commit the changes:
+
+git commit -m "Add Top 3 Music Apps"
+
+Push the changes:
+
+git push
+
+Then open the GitHub repository website.
+
+Go to Issues -> New Issue.
+
+Issue title:
+
+Add playlist sharing
+
+Issue description:
+
+Add a playlist sharing feature so users can share their music playlists with friends.
+
+
+Task 5
+
+Git keeps track of changes made to files, so we do not need to create files like analysis_v1.ipynb, analysis_final.ipynb, and analysis_final2.ipynb.
+
+Git allows us to see previous versions and restore older versions when needed.
+
+GitHub stores the repository online and makes collaboration easier.
+
+This keeps a data science project organized and avoids confusion between multiple notebook versions.

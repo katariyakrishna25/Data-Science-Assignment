@@ -1,0 +1,105 @@
+GIT INSTALLATION + FUNDAMENTALS
+
+
+Task 1 - Install Git
+
+Install Git on Windows.
+
+After installation, open PowerShell and run:
+
+git --version
+
+This command displays the installed Git version and confirms that Git is installed successfully.
+
+
+Task 2 - Configure Git Username and Email
+
+Set Git username:
+
+git config --global user.name "Your Name"
+
+Set Git email:
+
+git config --global user.email "your@email.com"
+
+Check the configuration:
+
+git config --global user.name
+git config --global user.email
+
+These settings are used to identify the author of Git commits.
+
+
+Task 3 - Create InstaCloneRepo
+
+Create a new folder:
+
+mkdir InstaCloneRepo
+
+Go inside the folder:
+
+cd InstaCloneRepo
+
+Initialize Git repository:
+
+git init
+
+Check the files:
+
+dir -Force
+
+A hidden .git folder will be visible.
+
+The .git folder stores Git's repository information, history, configuration, and tracking data.
+
+
+Task 4 - Clone Public Repository
+
+Go to a suitable folder and run:
+
+git clone https://github.com/public-apis/public-apis.git
+
+Go inside the cloned repository:
+
+cd public-apis
+
+Check Git status:
+
+git status
+
+Expected output:
+
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+This means the repository was cloned successfully and there are no changes to commit.
+
+
+Task 5 - Create and Commit playlist.txt
+
+Go back to InstaCloneRepo:
+
+cd ..
+cd InstaCloneRepo
+
+Create playlist.txt and add three songs:
+
+"Believer"
+"Perfect"
+"Senorita"
+
+Add the file to Git staging:
+
+git add playlist.txt
+
+Commit the file:
+
+git commit -m "Add initial playlist with 3 songs"
+
+Check the status:
+
+git status
+
+The commit message is meaningful because it clearly describes the change made to the project.

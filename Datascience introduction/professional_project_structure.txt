@@ -1,0 +1,90 @@
+PROFESSIONAL PROJECT STRUCTURE FOR DA/DS
+
+Task 1
+
+Create a folder named insta-analytics.
+
+Inside it create:
+data/raw
+data/processed
+notebooks
+scripts
+dashboards
+reports
+README.md
+
+Add a sample CSV file named sample.csv inside data/raw.
+Add a sample Jupyter notebook named analysis.ipynb inside notebooks.
+
+
+Task 2
+
+Create a folder named ml-project.
+
+Inside it create:
+data
+src
+notebooks
+models
+saved_artifacts
+README.md
+
+Add a dummy text file inside each subfolder.
+
+
+Task 3
+
+Create a .gitignore file inside insta-analytics.
+
+Write:
+
+data/raw/*
+.ipynb_checkpoints/
+*.h5
+*.pkl
+
+
+Task 4
+
+README.md for Spotify Song Popularity Predictor:
+
+# Spotify Song Popularity Predictor
+
+## Project Summary
+
+This project predicts the popularity of Spotify songs using song features and machine learning.
+
+## Dataset
+
+Dataset Link:
+https://example.com/spotify-dataset
+
+## Setup
+
+Install Python libraries:
+
+pip install pandas numpy matplotlib seaborn scikit-learn
+
+## Results & Visuals
+
+Model results, accuracy, and charts will be added here.
+
+
+Task 5
+
+Open-source project:
+https://github.com/ageron/handson-ml3
+
+Clone it using:
+
+git clone https://github.com/ageron/handson-ml3.git
+
+Three observations:
+
+1. It uses notebooks for data science experiments.
+2. It has an organized project structure.
+3. Its structure is larger than a basic DA/DS project.
+
+One improvement:
+
+I would separate raw data, processed data, reports, and dashboards into separate folders to make the project easier to manage.

@@ -1,0 +1,122 @@
+GIT BRANCHING & COLLABORATION
+
+Task 1
+
+Create a new branch:
+
+git checkout -b feature-playlist
+
+Create a file named playlist.md and write:
+
+# Top 3 Favorite Spotify Playlists
+
+1. Today's Top Hits
+2. Chill Hits
+3. Workout Music
+
+Add and commit the file:
+
+git add playlist.md
+git commit -m "Add favorite Spotify playlists"
+
+
+Task 2
+
+Switch to main:
+
+git checkout main
+
+Make a change in playlist.md and commit it:
+
+git add playlist.md
+git commit -m "Update playlist on main branch"
+
+Switch to feature-playlist:
+
+git checkout feature-playlist
+
+Make a different change to the same line in playlist.md and commit it:
+
+git add playlist.md
+git commit -m "Update playlist on feature branch"
+
+Switch back to main:
+
+git checkout main
+
+Merge the feature branch:
+
+git merge --no-ff feature-playlist
+
+If there is a conflict, open playlist.md in VS Code.
+
+VS Code will show the conflict with options:
+
+Accept Current Change
+Accept Incoming Change
+Accept Both Changes
+
+Choose the required option, save the file, and then run:
+
+git add playlist.md
+git commit -m "Resolve playlist merge conflict"
+
+
+Task 3
+
+Fork a public GitHub data science repository from GitHub.
+
+Clone your fork:
+
+git clone YOUR_FORK_REPOSITORY_URL
+
+Go inside the project:
+
+cd PROJECT_FOLDER
+
+Create a new branch:
+
+git checkout -b feature-zomato-analysis
+
+Create a file named:
+
+zomato_analysis.txt
+
+Write:
+
+I would analyze Zomato order data to find popular restaurants, cuisines, order trends, delivery times, and customer ratings.
+
+Add and commit:
+
+git add zomato_analysis.txt
+git commit -m "Add Zomato data analysis description"
+
+
+Task 4
+
+Push the feature branch:
+
+git push -u origin feature-zomato-analysis
+
+Open the GitHub repository.
+
+Click "Compare & pull request".
+
+Create a Pull Request to the original repository.
+
+PR title:
+
+Add Zomato analysis description
+
+PR comment:
+
+This change adds a short description of how Zomato order data can be analyzed to find useful business insights.
+
+Request a review from a classmate.
+
+
+Task 5
+
+Sample Pull Request Review Comment:
+
+"Great work on the new data visualization feature. The chart is clear and makes the data easier to understand. Please consider adding axis labels and a title so users can understand the visualization more easily. Overall, this is a useful addition to the project."
