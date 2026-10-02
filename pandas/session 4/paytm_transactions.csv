@@ -1,0 +1,6 @@
+transaction_id;customer_name;amount;city;payment_mode
+1;Amit;500;Surat;UPI
+2;;750;Mumbai;Card
+3;Rahul;;Ahmedabad;UPI
+4;Neha;1200;;Cash
+5;Karan;650;Surat;UPI
