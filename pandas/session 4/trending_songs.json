@@ -1,0 +1,32 @@
+[
+    {
+        "song": "Blinding Lights",
+        "artist": "The Weeknd",
+        "genre": "Pop",
+        "streams": 1000000
+    },
+    {
+        "song": "Shape of You",
+        "artist": "Ed Sheeran",
+        "genre": "Pop",
+        "streams": 950000
+    },
+    {
+        "song": "Perfect",
+        "artist": "Ed Sheeran",
+        "genre": "Pop",
+        "streams": 850000
+    },
+    {
+        "song": "Believer",
+        "artist": "Imagine Dragons",
+        "genre": "Rock",
+        "streams": 800000
+    },
+    {
+        "song": "Levitating",
+        "artist": "Dua Lipa",
+        "genre": "Pop",
+        "streams": 780000
+    }
+]
