@@ -25,6 +25,7 @@ VALUES
 (8, 101, 'Card', 600);
 
 
+
 -- QUESTION 2
 -- Count orders placed using each payment method.
 
