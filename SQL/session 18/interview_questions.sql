@@ -69,4 +69,5 @@ SELECT product_name, category, price
 FROM FlipkartProducts
 WHERE category = 'Electronics'
   AND price BETWEEN 1000 AND 50000;
- 
+  
+  

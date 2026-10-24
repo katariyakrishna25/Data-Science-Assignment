@@ -15,7 +15,7 @@ WHERE location = 'Koramangala'
   AND cuisines LIKE '%North Indian%'
   AND rate IS NOT NULL
 ORDER BY rate DESC, votes DESC
-LIMIT 5;
+LIMIT 5; 
 
 
 -- QUESTION 2 
