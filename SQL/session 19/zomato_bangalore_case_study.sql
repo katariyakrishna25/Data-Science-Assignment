@@ -18,7 +18,7 @@ ORDER BY rate DESC, votes DESC
 LIMIT 5;
 
 
--- QUESTION 2
+-- QUESTION 2 
 -- Find the 3 most expensive cuisines based on average cost for two.
 -- Assumes cost_for_two is numeric.
 

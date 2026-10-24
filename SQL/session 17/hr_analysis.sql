@@ -23,7 +23,7 @@ VALUES
 
 -- QUESTION 2
 -- Count restaurants for each cuisine type.
-
+ 
 SELECT
     cuisine,
     COUNT(*) AS total_restaurants
