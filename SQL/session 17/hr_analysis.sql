@@ -17,7 +17,7 @@ INSERT INTO Restaurant (id, name, cuisine, location, average_rating)
 VALUES
 (1, 'La Pinoz Pizza', 'Italian', 'Ahmedabad', 4.3),
 (2, 'Dominos', 'Italian', 'Surat', 4.1),
-(3, 'Honest', 'Indian', 'Ahmedabad', 4.2),
+(3, 'Honest', 'Indian', 'Ahmedabad', 4.2), 
 (4, 'Punjabi Tadka', 'North Indian', 'Surat', 4.0),
 (5, 'TGB - The Grand Bhagwati', 'Multi Cuisine', 'Ahmedabad', 4.5);
 
